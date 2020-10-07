@@ -28,7 +28,7 @@ package com.company;
             int x=5; //X'e değer atama
             int y=3;
 
-            //Aritmatik operatörler
+            //Aritmetik operatörler
             // 2 değerin toplamını bir değere atama alttaki 2 kodda aynı işlevdedir.
             x=x+y; //5+3
             x+=y;  //8+3

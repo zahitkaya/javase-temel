@@ -32,7 +32,7 @@ public class SimpleProject {
 
         }
 
-        System.out.println(binaryNumber);
+        System.out.println(binaryNumber); //10011 döndürdü
 
     }
 }

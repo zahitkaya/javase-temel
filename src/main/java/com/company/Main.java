@@ -2,19 +2,8 @@ package com.company;
 
 
     public class Main {
-        int age=5;
-        static int year=2012;
-
-        public static void helloWorld() {
-            System.out.println("Hello World");
-        }
-
-        public void helloWorldNotStatic() {
-            System.out.println("Hello World");
-        }
-        //Static değişkenler metod içerisinde tanımlanamaz.
-        // Ayrıca static değişkenler class objesiyle çağrılmasına gerek yoktur.
-        int GLOBAL = 5;
+        //Global değişkenler bütün metotlar tarafından ulaşılabilir.
+        int globalNumber = 5;
 
         public static void main(String[] args) {
             //JAVADA DEĞİŞKEN TANIMLAMA

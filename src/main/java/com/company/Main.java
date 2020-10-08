@@ -2,7 +2,7 @@ package com.company;
 
 
     public class Main {
-        //Global değişkenler bütün metotlar tarafından ulaşılabilir.
+        //.
         int globalNumber = 5;
 
         public static void main(String[] args) {

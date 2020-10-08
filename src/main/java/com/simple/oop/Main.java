@@ -14,7 +14,7 @@ public class Main {
         System.out.println(footballPlayer.getName());
 
 
-        //Kalıtım(Inheritince). Sadece parentı kullanarak Childdaki metoda ulaştık.
+        //Kalıtım(Inheritince). Sadece parentı kullanarak Childdaki metoda ulaştık..
         Parent parent=new Parent();
         parent.printHelloWorld();
         //Override

@@ -15,14 +15,17 @@ public class Main {
 
 
         //Kalıtım(Inheritince). Sadece parentı kullanarak Childdaki metoda ulaştık..
-        Parent parent=new Parent();
-        parent.printHelloWorld();
-        //Override
-        parent.sampleMethod();
-
-        //Polymorphism
         Child child=new Child();
+        child.printHelloWorld();
+        //Override
         child.sampleMethod();
+
+        //Polymorphosim
+        Parent firstChild=new Child("Gülüyor");
+        Parent secondChild=new SecondChild("Ağlıyor");
+        System.out.println(firstChild.getAction());
+        System.out.println(secondChild.getAction());
+
 
         //toString bir String classı metodudur. String dışındaki değişkenleri Stringe çevirir.
         int number=5;

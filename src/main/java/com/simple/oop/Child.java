@@ -1,10 +1,21 @@
 package com.simple.oop;
 
-public class Child {
-    void printHelloWorld(){
-        System.out.println("Hello world");
+public class Child extends Parent {
+
+    public Child(){
+
     }
-    void sampleMethod(){
-        System.out.println("This is a sample metod");
+    public Child(String action){
+        super(action);
+    }
+
+    @Override
+    void sampleMethod() {
+        System.out.println("This method overrided");
+    }
+
+    @Override
+    String getAction() {
+        return "İlk çocuk " +super.getAction();
     }
 }

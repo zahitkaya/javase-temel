@@ -1,11 +1,25 @@
 package com.simple.oop;
 
-public class Parent extends Child {
+public class Parent  {
 
-   //Override childdaki metodu yok sayıp üzerine yazar.
+    private String action;
+    public Parent(){
 
-    @Override
-    void sampleMethod() {
-        System.out.println("This method overrided.");
     }
+    public Parent(String action){
+        this.action=action;
+    }
+
+    void printHelloWorld(){
+        System.out.println("Hello world");
+    }
+   //Override childdaki metodu yok sayıp üzerine yazar.
+   void sampleMethod(){
+       System.out.println("This is a sample metod");
+   }
+
+   String getAction(){
+        return action;
+   }
+
 }

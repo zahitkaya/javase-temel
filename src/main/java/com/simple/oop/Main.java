@@ -7,11 +7,27 @@ public class Main {
 
     public static void main(String[] args) {
 
+        String abc = new String("Hello World");
+        String xyz = new String("Hello World");
+
+        if(abc == xyz)
+            System.out.println("Refers to same string");
+        else
+            System.out.println("Refers to different strings");
+
+
+        if(abc.equals(xyz)){
+            System.out.println("Contents of both strings are same");
+            }
+        else{
+            System.out.println("Contents of strings are different");}
+
         //Constructor,getter setter metodları
         FootballPlayer footballPlayer = new FootballPlayer("Jose Sosa", "Fenerbahçe", 75.5, 183);
         System.out.println(footballPlayer.getTeamName());
         footballPlayer.setName("Diego Perotti");
         System.out.println(footballPlayer.getName());
+        System.out.println(footballPlayer+" fb");
 
 
         //Kalıtım(Inheritince). Sadece parentı kullanarak Childdaki metoda ulaştık..

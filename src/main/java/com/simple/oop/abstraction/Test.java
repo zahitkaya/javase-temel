@@ -13,4 +13,5 @@ public class Test extends SampleAbstract implements SampleInterface {
     public int getId() {
         return super.getId();
     }
+
 }

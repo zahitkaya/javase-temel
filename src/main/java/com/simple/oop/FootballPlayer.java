@@ -20,6 +20,16 @@ public class FootballPlayer {
         this.height = height;
     }
 
+    @Override
+    public String toString() {
+        return "FootballPlayer{" +
+                "name='" + name + '\'' +
+                ", teamName='" + teamName + '\'' +
+                ", weight=" + weight +
+                ", height=" + height +
+                '}';
+    }
+
     public String getName() {
         return name;
     }

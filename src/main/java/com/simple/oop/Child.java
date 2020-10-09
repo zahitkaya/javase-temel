@@ -18,4 +18,6 @@ public class Child extends Parent {
     String getAction() {
         return "İlk çocuk " +super.getAction();
     }
+
+
 }

@@ -19,6 +19,12 @@ public class ArrayLists {
         //ArrayList içerisine bir şeyler ekleme
         list.add("Hello");
 
+        //Listeden index kullanarak veri çekme
+        list.get(0);
+
+        //Arraylistin eleman sayısını bulma
+        list.size();
+
         //Listeden eleman silme
         list.remove(0);
 

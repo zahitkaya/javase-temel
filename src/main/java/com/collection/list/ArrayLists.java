@@ -1,8 +1,8 @@
 package com.collection.list;
 
-import java.time.Period;
+import com.collection.Person;
+
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class ArrayLists {

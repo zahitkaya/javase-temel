@@ -1,6 +1,8 @@
 package com.collection.map;
 
 
+import com.collection.Person;
+
 import java.util.*;
 
 public class HashMapManager {
@@ -20,6 +22,10 @@ public class HashMapManager {
         }
         //printlerken dağınık printliyor.
         hashMapDefining();
+        personMap();
+
+
+
     }
 
 
@@ -38,5 +44,31 @@ public class HashMapManager {
             System.out.println("Key: "+key+" value "+hashMap.get(key));
         }
 
+
+
+
+
     }
+
+    public static void personMap(){
+        //Kişileri oluşturuyoruz
+        Person person1=new Person(1,"Mehmet",15);
+        Person person2=new Person(2,"Ali",17);
+        Person person3=new Person(3,"Metin",19);
+        Person person4=new Person(4,"Feyyaz",21);
+
+        //Oluşturduğumuz kişileri HashMapin içerisine atıyoruz
+        HashMap<String,Person> mapPerson = new HashMap<>();
+        mapPerson.put(person1.getName(),person1);
+        mapPerson.put(person2.getName(),person2);
+        mapPerson.put(person3.getName(),person3);
+        mapPerson.put(person4.getName(),person4);
+
+        //Printliyoruz
+        for(String key:mapPerson.keySet()){
+            System.out.println(key+" : "+mapPerson.get(key));
+        }
+
+    }
+
 }

@@ -1,4 +1,4 @@
-package com.collection.list;
+package com.collection;
 
 public class Person {
     private int id;

@@ -47,6 +47,8 @@ public class ArrayLists {
 
         //addPersonda eklediğimiz kişileri yazdırdık.
         addPerson(personList);
+
+
     }
 
     //String listeleri alfabetik/Küçükten büyüğe sıralama

@@ -11,7 +11,7 @@ public class HashMapManager {
         h.put("Türkiye","Ankara");
         h.put("Amerika","Washington");
         h.put("Azerbeycan","Bakü");
-        //h.put("Türkiye","İstanbul"); // hata verecektir 2 tane aynı key olmaz.
+        //h.put("Türkiye","İstanbul"); // hata verecektir 2 tane key aynı key olmaz.
 
         //HashMapteki değerlere ulaşma
         Set s=h.entrySet(); //HashMApi sete çevirdik.
@@ -20,9 +20,12 @@ public class HashMapManager {
             Map.Entry item=(Map.Entry) i.next(); //Set olan i.nexti tekrar Mape çevirdik.
             System.out.println(item.getKey()+": "+item.getValue());
         }
+        System.out.println("---------");
         //printlerken dağınık printliyor.
         hashMapDefining();
+        System.out.println("---------");
         personMap();
+        System.out.println("---------");
 
 
 

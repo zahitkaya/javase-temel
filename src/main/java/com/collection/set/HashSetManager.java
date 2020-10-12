@@ -46,10 +46,8 @@ public class HashSetManager {
         HashSet secondHashSet = new HashSet<>(Arrays.asList(arr)); // secondHashSetin içerisine default olarak arr'i koyduk
         System.out.println(secondHashSet);
 
-
-
-
-
     }
+
+
 
 }

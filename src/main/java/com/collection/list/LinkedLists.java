@@ -13,8 +13,8 @@ public class LinkedLists {
             l.add(i);
         }
 
-        l.forEach(item-> System.out.print(item+" "));
-
+        l.forEach(item->  System.out.print(item+" "));
+        System.out.println();
 
     }
 }

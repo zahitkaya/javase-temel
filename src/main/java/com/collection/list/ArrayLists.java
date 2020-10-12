@@ -39,6 +39,7 @@ public class ArrayLists {
         for (int i=1;i<=5;i++){
             list.add(i);
         }
+
         //Bu listedeki elemanlara teker teker ulaşıp yazdıralım
         for (Object i:list
              ) {

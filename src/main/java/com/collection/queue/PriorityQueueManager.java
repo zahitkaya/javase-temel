@@ -1,5 +1,7 @@
 package com.collection.queue;
 
+import com.collection.Person;
+
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -24,6 +26,18 @@ public class PriorityQueueManager {
         q.poll();
         System.out.println("Pooldan sonra"+q);
 
+        personQueue();
+
+
+
+    }
+    public static void personQueue(){
+        Person person1=new Person(1,"Mehmet",5);
+        Person person2=new Person(2,"Mehmet",6);
+        Person person3=new Person(3,"Mehmet",7);
+        Person person4=new Person(4,"Mehmet",8);
+
+        Queue<Person> people=new PriorityQueue<Person>();
 
 
     }

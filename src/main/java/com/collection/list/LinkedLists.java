@@ -15,6 +15,7 @@ public class LinkedLists {
 
         l.forEach(item->  System.out.print(item+" "));
         System.out.println();
+        l.get(2);
 
     }
 }

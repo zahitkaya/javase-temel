@@ -24,6 +24,7 @@ public class TreeSetManager {
         t.add("Kasım");
         t.add("Aralık");
 
+
         t.forEach(item-> System.out.println(item));
 
         TreeSet n = new TreeSet<>();

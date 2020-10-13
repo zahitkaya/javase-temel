@@ -14,8 +14,14 @@ public class PriorityQueueManager {
         q.add(5);
         q.add(2);
         q.add(25);
+        q.add(-5);
+        q.add(0);
         q.add(10);
         q.add(1);
+
+
+
+
 
         //PriortyQueue da yerleştirme sırasının bir önemi yoktur.
         System.out.println("Başlangıçtaki sıra: "+q);
@@ -37,8 +43,8 @@ public class PriorityQueueManager {
         Person person3=new Person(3,"Mehmet",7);
         Person person4=new Person(4,"Mehmet",8);
 
-        Queue<Person> people=new PriorityQueue<Person>();
-
+        PriorityQueue<Person> people=new PriorityQueue<Person>();
+        
 
     }
 }

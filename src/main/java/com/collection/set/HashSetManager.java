@@ -1,5 +1,7 @@
 package com.collection.set;
 
+import com.collection.Person;
+
 import java.util.*;
 
 public class HashSetManager {
@@ -16,6 +18,7 @@ public class HashSetManager {
         h.add(7); //Integer olan ikinci 7 eklenmiyor.
         h.add(true);
         h.add(null); //null değerler başta yazılıyor.
+
 
 
         //HashSetin içindekilere ulaşma
@@ -46,8 +49,33 @@ public class HashSetManager {
         HashSet secondHashSet = new HashSet<>(Arrays.asList(arr)); // secondHashSetin içerisine default olarak arr'i koyduk
         System.out.println(secondHashSet);
 
-    }
 
+        HashSet l=new HashSet();
+
+        l.add("Ocak");
+        l.add("Şubat");
+        l.add("Mart");
+        l.add("Nisan");
+        l.add("Mayıs");
+        l.add("Haziran");
+        l.add("Temmuz");
+        l.add("Ağustos");
+        l.add("Eylül");
+        l.add("Ekim");
+        l.add("Kasım");
+        l.add("Aralık");
+        System.out.println(l);
+
+        Set<Person> personSet=new HashSet();
+        Person person1=new Person(1,"Emre",22);
+        Person person2=new Person(1,"Emre",22);
+        personSet.add(person1);
+        personSet.add(person2);
+        System.out.println(personSet);
+
+
+
+    }
 
 
 }

@@ -8,6 +8,11 @@ public class TreeMapManager {
         t.put("Türkiye","Ankara");
         t.put("Amerika","Washington");
         t.put("Azerbeycan","Bakü");
+        t.put("Fransa","Paris");
+
+        Map.Entry key= (Map.Entry) t.entrySet().iterator().next();
+        System.out.println(key.getValue());
+
         //h.put("Türkiye","İstanbul"); // hata verecektir 2 tane aynı key olmaz.
 
         //HashMapteki değerlere ulaşma

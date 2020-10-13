@@ -46,6 +46,7 @@ public class ArrayLists {
             System.out.println(i);
         }
 
+
         //addPersonda eklediğimiz kişileri yazdırdık.
         addPerson(personList);
 

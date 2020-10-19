@@ -1,6 +1,6 @@
 package com.var.arg;
 
-public class VarArgeExamples {
+public class VarArgExamples {
 
     static void sampleMethod(int ...a){
         int sum=0;

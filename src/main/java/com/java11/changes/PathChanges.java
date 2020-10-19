@@ -6,10 +6,13 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class PathChanges {
+    interface sa{
+        String method(String s1,String s2);
+    }
     public static void main(String[] args) {
         //Dosyanın içerisindeki yazıyı okuma
-        Path filePath = Paths.get("C:\\Users\\zahit\\IdeaProjects\\javase2\\src\\main\\" +
-                "java\\com\\java11\\changes","sample.txt");
+
+        Path filePath = Paths.get("sample.txt");
         try {
             String content= Files.readString(filePath);
             System.out.println(content); //Detay Soft
@@ -30,6 +33,9 @@ public class PathChanges {
             e.printStackTrace();
 
         }
+
+
+
 
 
 

@@ -6,6 +6,11 @@ public class LambdaManager {
 
     public interface Calculation {
         int calculate(int x, int y);
+
+        default String getZahit(String a) {
+            return a;
+        }
+
     }
 
     public interface Name {
@@ -18,11 +23,14 @@ public class LambdaManager {
         Calculation sub = (x, y) -> x - y;
         Calculation mul = (x, y) -> x * y;
         Calculation div = (x, y) -> x / y;
+        Calculation a = null;
+        a.getZahit("selam");
 
         System.out.println("5+2= " + add.calculate(5, 2));
         System.out.println("5-2= " + sub.calculate(5, 2));
         System.out.println("5*2= " + mul.calculate(5, 2));
         System.out.println("5/2= " + div.calculate(5, 2));
+
 
         System.out.println("---------");
 

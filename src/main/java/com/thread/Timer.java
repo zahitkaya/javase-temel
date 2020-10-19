@@ -1,5 +1,7 @@
 package com.thread;
 
+import com.collection.Person;
+
 public class Timer extends Thread {
     private int remainingTime;
     private String alarmName;
@@ -14,12 +16,15 @@ public class Timer extends Thread {
         Timer alarm2 = new Timer(80, "İkinci alarm");
         alarm.start();
         alarm2.start();
+        int k=5;
+
     }
 
     @Override
     public void run() {
         try {
             while (remainingTime >= 0) {
+
                 System.out.println();
                 System.out.println(alarmName + " Zamanın bitmesine " + remainingTime + " saniye kaldı");
                 System.out.println();
@@ -30,6 +35,5 @@ public class Timer extends Thread {
             e.printStackTrace();
         }
     }
-
 
 }

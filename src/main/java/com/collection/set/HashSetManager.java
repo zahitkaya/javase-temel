@@ -1,11 +1,15 @@
 package com.collection.set;
 
 import com.collection.Person;
+import java.util.concurrent.PriorityBlockingQueue;
+
 
 import java.util.*;
 
 public class HashSetManager {
     public static void main(String[] args) {
+
+
 
         //HashSet oluşturma
         HashSet h=new HashSet<String>();
@@ -51,6 +55,11 @@ public class HashSetManager {
 
 
         HashSet l=new HashSet();
+        l.retainAll(l);
+
+        HashSet bag=new HashSet<String>();
+        HashSet books=new HashSet<String>();
+        bag.addAll(books);
 
         l.add("Ocak");
         l.add("Şubat");
@@ -64,6 +73,12 @@ public class HashSetManager {
         l.add("Ekim");
         l.add("Kasım");
         l.add("Aralık");
+
+
+        Object []sampleArray=l.toArray();
+        System.out.println(Arrays.toString(sampleArray));
+
+        System.out.println();
         System.out.println(l);
 
         Set<Person> personSet=new HashSet();
@@ -72,6 +87,9 @@ public class HashSetManager {
         personSet.add(person1);
         personSet.add(person2);
         System.out.println(personSet);
+
+
+
 
 
 
